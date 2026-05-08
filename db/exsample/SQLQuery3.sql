@@ -1,0 +1,4 @@
+USE ScadaDB;
+SELECT TOP 20 *
+FROM AlarmEvent
+ORDER BY EventTime DESC;
