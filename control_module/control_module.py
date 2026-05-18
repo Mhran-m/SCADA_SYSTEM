@@ -47,7 +47,7 @@ def run_control_loop(pv_var, sp_var, co_var, stop_event):
     process = AirHeaterSim(dt=dt)
 
     # Initialize SP
-    sp_var.set_value(ua.Variant(40.0, ua.VariantType.Double))
+    sp_var.set_value(ua.Variant(50.0, ua.VariantType.Double))
 
     while not stop_event.is_set():
         sp = sp_var.get_value()
